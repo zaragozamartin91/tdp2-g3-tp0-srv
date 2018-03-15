@@ -1,0 +1,46 @@
+{
+  "name": "tdp2-g3-tp0-srv",
+  "version": "1.0.0",
+  "description": "Proyecto servidor del tp0 de tdp2",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "docs": "node_modules/.bin/jsdoc -c jsdoc_conf.json -d docs"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.17.1",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-session": "^1.15.4",
+    "formidable": "^1.1.1",
+    "jquery": "^3.2.1",
+    "jsonwebtoken": "^7.4.3",
+    "log4js": "^2.3.3",
+    "moment": "^2.18.1",
+    "nimble": "0.0.2",
+    "object-hash": "^1.1.8",
+    "serve-favicon": "~2.4.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "coffee-coverage": "^2.0.1",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.4",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaragozamartin91/tdp2-g3-tp0-srv"
+  }
+}
